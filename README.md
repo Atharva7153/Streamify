@@ -1,8 +1,9 @@
 <h1 align="center">✨ Fullstack Chat & Video Calling App ✨</h1>
 
-![Demo App](/frontend/public/screenshot-for-readme.png)
 
 Highlights:
+
+- I have made this project by watching a tutorial so its not a unique project
 
 - 🌐 Real-time Messaging with Typing Indicators & Reactions
 - 📹 1-on-1 and Group Video Calls with Screen Sharing & Recording
@@ -16,6 +17,9 @@ Highlights:
 - ⏳ And much more!
 
 ---
+
+## Deployed Link
+https://streamify-07us.onrender.com
 
 ## 🧪 .env Setup
 
