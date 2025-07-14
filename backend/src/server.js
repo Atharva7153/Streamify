@@ -17,13 +17,21 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [ "http://localhost:5173",
+          "https://your-frontend.onrender.com"
+     ],
+    
     credentials: true, // allow frontend to send cookies
   })
 );
 
 app.use(express.json());
 app.use(cookieParser());
+
+app.get("/ping", (req, res) => {
+  // keeps things super light; no DB work here
+  res.send("pong");
+});
 
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
